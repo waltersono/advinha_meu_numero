@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Advinha Meu Numero</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <button class="btn" id="btnAgain">Repetir!</button>
+            <p class="paragraph mt-small">(Entre <span id="min">1</span> e <span id="max">20</span> )</p>
+        </header>
+
+        <h1 class="h1 center mt-medium">Advinha meu numero!</h1>
+
+    </div>
+
+    <div class="number-container">
+        <div class="number-box center mt-medium mb-big" id="number">?</div>
+        <hr class="line">
+    </div>
+
+    <div class="container">
+
+        <div class="columns mt-big">
+            <div class="columns-1 mb-big">
+                <input type="number" class="input" value="0" id="inputNumber">
+                <button class="btn" id="btnCheck">Tentar</button>
+            </div>
+            <div class="columns-2">
+                <p class="paragraph" id="message">Comece advinhando...</p>
+                <p class="paragraph">Pontos: <span id="score">20</p>
+                <p class="paragraph">Ponto maximo: <span id="highscore">0</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="src/js/game.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+
+</html>

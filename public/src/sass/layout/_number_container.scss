@@ -1,0 +1,13 @@
+.number-container {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border: 3px solid $color-white;
+    z-index: -1;
+}
