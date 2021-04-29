@@ -39,7 +39,7 @@ function check() {
     // Check if the choosen number is lower than the random one
     if (guessNumber < randomNumber) {
 
-        message.textContent = "Muito baixo";
+        message.textContent = "To Low";
 
         // reduce score points
         score--;
@@ -47,7 +47,7 @@ function check() {
         // Check if the choosen number is higher than the random one
     } else if (guessNumber > randomNumber) {
 
-        message.textContent = "Muito alto";
+        message.textContent = "To High";
 
         // reduce score points
         score--;
@@ -56,7 +56,7 @@ function check() {
         // Check if the choosen number is equal than the random one
     } else if (guessNumber == randomNumber) {
 
-        message.textContent = "Correcto";
+        message.textContent = "Correct";
 
         document.body.style.backgroundColor = "#13be46";
 
@@ -84,7 +84,7 @@ function init() {
 
     number.textContent = "?";
 
-    message.textContent = "Comece Adivinhando...";
+    message.textContent = "Start Guessing...";
 
     score = scoreText.textContent = 20;
 
