@@ -51,6 +51,7 @@ function check() {
 }
 
 function again() {
+
     min.textContent = 1;
 
     max.textContent = 20;
