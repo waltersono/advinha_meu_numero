@@ -58,7 +58,7 @@ function again() {
 
     number.textContent = "?";
 
-    message.textContent = "Start guessing...";
+    message.textContent = "Comece Adivinhando...";
 
     score.textContent = "0";
 
