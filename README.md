@@ -21,11 +21,11 @@ The game begins by selecting a hidden random number and you have to try to guess
 
 You begin the game with 20 points
 
-![Guess My Number First Screen](src/img/screenshot_1.png)
+![First screen](/src/img/screenshot_1.png)
 
 Insert your guess inside the input box and click "Check"
 
-![Guess My Number First Screen](src/img/screenshot_2.png)
+![Screen after a check](/src/img/screenshot_2.png)
 
 For each *Check* you make, the game will give you information, as to whether the number you inserted is lower or higher than the random number
 
@@ -33,7 +33,7 @@ Each time you guess wrong you will lose one point of you score.
 
 You win by guessing the correct number.
 
-![Guess My Number First Screen](src/img/screenshot_3.png)
+![Wining screen](/src/img/screenshot_3.png)
 
 ## License
 The Guess My Number is an open-source project license under the [MIT license](license)
