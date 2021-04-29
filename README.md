@@ -12,7 +12,7 @@
 
 This project can be installed by downloading the zip project and extracting on your web server projects folder.
 
-You can choose to view first, for that just visit this [link](https://waltersono.github.io/advinhameunumero/)
+You can choose to view first, for that just visit this [link](https://waltersono.github.io/guessmynumber/)
 
 
 ## Usage
