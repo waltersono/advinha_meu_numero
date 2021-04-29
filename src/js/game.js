@@ -20,6 +20,8 @@ const btnAgain = document.querySelector('#btnAgain');
 
 let randomNumber;
 
+randomNumber = Math.floor(Math.random() * 20) + 1;
+
 
 btnAgain.addEventListener('click', again);
 
@@ -38,7 +40,7 @@ function check() {
 
         message.textContent = "Muito alto";
 
-    } else {
+    } else if (guessNumber == randomNumber) {
 
         message.textContent = "Correcto";
 
