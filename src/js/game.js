@@ -8,9 +8,9 @@ const number = document.querySelector('#number');
 
 const message = document.querySelector('#message');
 
-const score = document.querySelector('#score');
+const scoreText = document.querySelector('#score');
 
-const highscore = document.querySelector('#highscore');
+const highscoreText = document.querySelector('#highscore');
 
 const inputNumber = document.querySelector('#inputNumber');
 
@@ -20,8 +20,14 @@ const btnAgain = document.querySelector('#btnAgain');
 
 let randomNumber;
 
+let score;
+
+let hightscore = 0;
+
 randomNumber = Math.floor(Math.random() * 20) + 1;
 
+
+again();
 
 btnAgain.addEventListener('click', again);
 
@@ -32,13 +38,18 @@ function check() {
 
     let guessNumber = inputNumber.value;
 
+
     if (guessNumber < randomNumber) {
 
         message.textContent = "Muito baixo";
 
+        score--;
+
     } else if (guessNumber > randomNumber) {
 
         message.textContent = "Muito alto";
+
+        score--;
 
     } else if (guessNumber == randomNumber) {
 
@@ -46,9 +57,19 @@ function check() {
 
         document.body.style.backgroundColor = "#13be46";
 
+
         number.textContent = randomNumber;
 
+        if (score > hightscore) {
+            hightscore = score;
+        }
+
+        highscoreText.textContent = hightscore;
+
     }
+
+
+    scoreText.textContent = score;
 
 }
 
@@ -62,12 +83,12 @@ function again() {
 
     message.textContent = "Comece Adivinhando...";
 
-    score.textContent = "0";
-
-    highscore.textContent = "0";
+    score = scoreText.textContent = 20;
 
     inputNumber.value = 0;
 
     randomNumber = Math.floor(Math.random() * 20) + 1;
+
+    document.body.style.backgroundColor = "#2e2e2e";
 
 }
