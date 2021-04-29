@@ -22,7 +22,7 @@ let randomNumber;
 
 let score;
 
-let hightscore = 0;
+let highscore = 0;
 
 randomNumber = Math.floor(Math.random() * 20) + 1;
 
@@ -60,11 +60,11 @@ function check() {
 
         number.textContent = randomNumber;
 
-        if (score > hightscore) {
-            hightscore = score;
+        if (score > highscore) {
+            highscore = score;
         }
 
-        highscoreText.textContent = hightscore;
+        highscoreText.textContent = highscore;
 
     }
 
