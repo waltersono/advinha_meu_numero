@@ -4,7 +4,7 @@
   "description": "Guess what random number was selected",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass public/src/sass/main.scss public/src/css/app.css -w"
+    "compile:sass": "node-sass src/sass/main.scss src/css/app.css -w"
   },
   "author": "Walter Sono",
   "license": "ISC",

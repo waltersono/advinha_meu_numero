@@ -1,0 +1,17 @@
+.input {
+    padding: 0.5rem;
+    border: 3px solid $color-white;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: transparent;
+    width: 200px;
+    color: $color-white;
+}
+
+@media (max-width: 500px) {
+    .input {
+        width: 100%;
+        font-size: 3rem;
+    }
+}
